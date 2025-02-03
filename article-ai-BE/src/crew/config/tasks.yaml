@@ -1,0 +1,176 @@
+identify_objectives_task:
+  description: >
+    Define the business objectives and target audience for the content. 
+    Align content goals with overall business strategies, ensuring they address 
+    the needs and pain points of our {target_audience}. 
+    Clearly identify key performance indicators (KPIs) for content success.
+
+    Key questions to answer:
+    - What is the goal of the content (e.g., awareness, engagement, conversion)?
+    - Who is the target audience, and what are their preferences?
+    - How will success be measured?
+
+    Organization Overview:
+    {organization_overview}
+    Business Objectives:
+    {business_objectives}
+    Target Audience:
+    {target_audience}
+    Target Description:
+    {audience_description}
+  expected_output: >
+    List of business objectives and target audience.
+
+analyze_trends_task:
+  description: >
+    Monitor and analyze industry trends to identify relevant topics 
+    and emerging themes that resonate with the {target_audience}. 
+    Use tools which are available to you to gather data on 
+    trending topics in {industry}. 
+
+    Key areas to focus:
+    - Trending topics in the industry
+    - Competitor content performance
+    - Influencer and thought leader insights
+    - FetchPostedBlogs tool can be used to fetch the latest blog posts from the blog and analyze already posted blogs and recommend not to write about the same topics.
+
+    Organization Overview:
+    {organization_overview}
+    Industry:
+    {industry}
+    Target Audience:
+    {target_audience}
+    Target Description:
+    {audience_description}
+  expected_output: >
+    A list of trending topics with data points on relevance, engagement potential, 
+    and alignment with business objectives. Include specific keywords or phrases 
+    associated with each trend.
+
+perform_keyword_research_task:
+  description: >
+    Conduct keyword research to find high-impact search terms relevant to 
+    our {industry} and {target_audience}. Focus on identifying both short-tail 
+    and long-tail keywords that balance high search volume with low competition.
+
+    Steps:
+    - Use SEO tools seo_tool to generate keyword ideas.
+    - Prioritize based on search volume, keyword difficulty, and intent.
+    - Segment keywords by topic clusters for better content planning.
+
+    Organization Overview:
+    {organization_overview}
+    Industry:
+    {industry}
+    Target Audience:
+    {target_audience}
+    Target Description:
+    {audience_description}
+  expected_output: >
+    A prioritized list of keywords grouped into topic clusters with associated 
+    metrics (search volume, competition, and relevance). Include suggestions 
+    for content topics based on keyword analysis.
+
+audit_existing_content_task:
+  description: >
+    Review and analyze existing content assets to assess their performance 
+    and identify gaps or opportunities for improvement. Focus on engagement metrics, 
+    SEO performance, and alignment with {business_objectives}.
+
+    Steps:
+    - Use tools like analytics tool to track performance data.
+    - Identify top-performing content and areas that need optimization.
+    - Highlight content gaps based on {audience_needs}.
+
+    Organization Overview:
+    {organization_overview}
+    Industry:
+    {industry}
+    Target Audience:
+    {target_audience}
+    Target Description:
+    {audience_description}
+  expected_output: >
+    A detailed report of existing content performance, including a list of 
+    high-performing assets and underperforming areas. Provide recommendations 
+    for updating or repurposing content to improve effectiveness.
+
+create_content_plan_task:
+  description: >
+    Develop a content plan that outlines the types of content, topics, 
+    and distribution channels. Ensure alignment with {business_objectives} 
+    and target audience preferences.
+
+    Key deliverables:
+    - Editorial calendar with content topics and publication dates.
+    - Content format recommendations (e.g., blogs, videos, infographics).
+
+    Organization Overview:
+    {organization_overview}
+    Industry:
+    {industry}
+    Target Audience:
+    {target_audience}
+    Target Description:
+    {audience_description}
+  expected_output: >
+    A comprehensive content plan with an editorial calendar, format guidelines, 
+    and publication timelines and content guidelines. Include topic clusters, target keywords, and 
+    channel recommendations.
+
+develop_content_task:
+  description: >
+    Create high-quality content tailored to {target_audience}. 
+    Ensure content is engaging, accurate, and optimized for search engines. 
+    Collaborate with design and marketing teams for visuals and branding.
+
+    Key requirements:
+    - Original and well-researched content.
+    - SEO optimization (keywords, meta descriptions, internal links).
+    - Consistent tone and voice aligned with the brand.
+    - Content should be in the format of markdown and should be in the format of blog post.
+    - Must add placeholder for images and videos.
+    - Must add sources links for the content.
+    - You can add code blocks, comments, and other formatting options if needed.
+    - Keep tone b/w  professional and friendly.
+
+    Organization Overview:
+    {organization_overview}
+    Industry:
+    {industry}
+    Target Audience:
+    {target_audience}
+    Target Description:
+    {audience_description}
+  expected_output: >
+    Completed blog post pieces ready for editing and publishing. Include 
+    SEO-optimized text, visuals (if applicable), and proper formatting 
+    for the intended platform.
+
+optimize_and_finalize_task:
+  description: >
+    Review, proofread, and finalize the content to ensure quality, consistency, and optimization for publishing. Conduct final checks for SEO, grammar, and formatting. 
+    
+    Steps:
+    - Proofread for grammar, style, and tone.
+    - Check for proper keyword integration and SEO best practices.
+    - Ensure visuals and links are functioning correctly.
+    - Ensure the content is in the format of markdown and should be in the format of blog post.
+    - Must add placeholder for images and videos.
+    - Must add sources links for the content.
+    - You can add code blocks, comments, and other formatting options if needed.
+    - Make 10 percent grammar mistakes in the content so that it looks like a human wrote it.
+  expected_output: >
+    A polished and fully optimized blog post piece ready for publishing.
+    Includes final SEO adjustments, corrections, and formatting refinements.
+    A fully fledge blog which a compnay can post on there portal with full sections of information.
+    Add 10 percent grammar mistakes in the content so that it looks like a human wrote it.
+    Use a semi-formal tone for the content.
+    Use modern lingo and slang for the content that a Gen Z would use.
+    Do not use very traditional words and phrases, that mostly bloomers relate to but use modern words and phrases.
+    Code blocks must use 4-space indentation only.
+    Format should be pure markdown throughout.
+    Never include backtick symbols anywhere in the content. 
+    STRICTLY format blog post as a markdown without any backticks "```" or any other symbols.
+    Use markdown syntax for formatting the content and make it look good.
+    avoide "```" in the content.
