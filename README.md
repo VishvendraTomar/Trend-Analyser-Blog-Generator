@@ -21,6 +21,7 @@ Traditional content creation faces several critical challenges:
 4. **React Frontend**: Provides user interface for system control
 5. **Agent Ecosystem**: Coordinates specialized AI agents
 
+
 ```mermaid
 graph TD
     A[FastAPI Backend] --> B[CrewAI Orchestrator]
