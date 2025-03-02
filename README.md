@@ -72,6 +72,7 @@ sequenceDiagram
     end
 ```
 
+
 ## Technical Implementation
 
 ### Database Schema
